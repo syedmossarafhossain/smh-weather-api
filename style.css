@@ -92,7 +92,9 @@ body::before {
 /* WEATHER PART STYLING */
 
 .weather-info {
-    border: solid;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .location-date-container {
@@ -107,7 +109,20 @@ body::before {
     gap: 6px;
 }
 
+.weather-summary-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.weather-summary-img {
+    width: 120px;
+    height: 120px;
+}
+
+.weather-summary-info {
+    text-align: end;
+}
 
 
 /* END WEATHER PART STYLING */
