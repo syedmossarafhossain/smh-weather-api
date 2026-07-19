@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     color: white;
+    font-weight: 600;
 }
 
 body {
@@ -26,6 +27,12 @@ body::before {
     background: rgb(0, 0, 0, 0.15);
     backdrop-filter: blur(15px);
 }
+
+* UTILITIES */
+.regular-txt {
+    font-weight: 400;
+}
+/* END UTILITIES */
 
 .main-container {
     width: 300px;
