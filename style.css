@@ -12,6 +12,8 @@ body {
     height: 100dvh;
     background-size: cover;
     background-position: center;
+    align-items: center;
+    justify-content: center;
 }
 
 body::before {
