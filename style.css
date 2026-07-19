@@ -35,4 +35,32 @@ body::before {
     rgb(255, 255, 255, 0.15));
     border-radius: 12px;
     backdrop-filter: blur(100px);
+    padding: 20px;
 }
+
+
+/* INPUT CONTAINER */
+
+.city-input {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 99px;
+    border: 3px solid transparent;
+    background: rgb(0, 0, 0, 0.15);
+    outline: none;
+}
+
+.city-input::placeholder {
+    color: rgb(255, 255, 255, 0.75);
+}
+
+
+
+
+
+
+
+
+
+
+/* END INPUT CONTAINER */
