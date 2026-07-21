@@ -149,6 +149,22 @@ body::before {
 .forecast-items-container {
     display: flex;
     gap: 15px;
+    overflow-x: scroll;
+    padding-bottom: 12px;
+}
+
+.forecast-items-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.forecast-items-container::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0, 0.1);
+    border-radius: 99px;
+}
+
+.forecast-items-container::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0, 0.15);
+    border-radius: 99px;
 }
 
 .forecast-item {
@@ -158,6 +174,8 @@ body::before {
     flex-direction: column;
     gap: 6px;
     padding: 10px;
+    align-items: center;
+    border-radius: 12px;
 }
 
 .forecast-item-img {
