@@ -89,4 +89,12 @@ async function updateWeatherInfo(city) {
             weather: [{ id, main }],
             wind: { speed }
         } = weatherData;
-    
+
+
+    countryTxt.textContent = `${name}, ${country}`;
+    tempTxt.textContent = `${temp.toFixed(1)} °C`; // ALSO US THIS math.round(temp) + '°C'
+    conditionTxt.textContent = main;
+    humidityValueTxt.textContent = `${humidity}%`;
+    windValueTxt.textContent = `${speed} M/s`;
+
+    currentDateTxt.textContent = getCurrentDate();
