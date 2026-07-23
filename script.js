@@ -70,3 +70,13 @@ function getCurrentDate(){
     }
     return currentDate.toLocaleDateString('en-GB', options);
 }
+
+
+async function updateWeatherInfo(city) {
+    const weatherData = await getFetchData('weather', city);
+
+    if (weatherData.cod != 200) {
+        showDisplaySection(notFoundSection);
+        return;
+    }
+    console.log(weatherData);
