@@ -98,3 +98,11 @@ async function updateWeatherInfo(city) {
     windValueTxt.textContent = `${speed} M/s`;
 
     currentDateTxt.textContent = getCurrentDate();
+
+
+    weatherSummaryImg.src = `assets/weather/${getWeatherIcon(id)}`;
+
+
+    showDisplaySection(weatherInfoSection);
+
+}
