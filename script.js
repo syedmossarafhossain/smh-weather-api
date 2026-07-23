@@ -80,3 +80,13 @@ async function updateWeatherInfo(city) {
         return;
     }
     console.log(weatherData);
+
+
+    const {
+            name,
+            sys: { country },
+            main: { temp, humidity },
+            weather: [{ id, main }],
+            wind: { speed }
+        } = weatherData;
+    
