@@ -60,4 +60,13 @@ function getWeatherIcon(id) {
     else return 'clouds.svg'
 }
 
-
+// FECTH CURRENT DATE
+function getCurrentDate(){
+    const currentDate = new Date();
+    const options = {
+        weekday: 'short',
+        day: '2-digit',
+        month: 'short'
+    }
+    return currentDate.toLocaleDateString('en-GB', options);
+}
